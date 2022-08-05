@@ -1,0 +1,8 @@
+.social-links {
+    display: flex;
+    color: var(--color-icon-grey);
+}
+
+.social-links>li:not(:last-child) {
+    margin-right: 10px;
+}

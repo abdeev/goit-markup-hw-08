@@ -1,0 +1,14 @@
+.logo {
+    text-decoration: none;
+    font-family: var(--secondary-font-logo);
+    @include font(26px, 700, 31px);
+    letter-spacing: 0.03em;
+}
+
+.logo--web {
+    color: var(--logo-web-color);
+}
+
+.logo--studio {
+    color: var(--logo-studio-dark);
+}

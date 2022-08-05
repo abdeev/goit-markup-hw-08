@@ -1,0 +1,68 @@
+.projects {
+    padding-top: 50px;
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-item {
+    position: relative;
+    flex-basis: calc((100% - (2 * 30px)) / 3);
+    background-color: var(--bg-head-color);
+    transition: box-shadow var(--transition-time-and-func),
+        translate var(--transition-time-and-func);
+
+        &:hover,
+        &:focus {
+            outline: transparent;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            }
+                &:hover .overlay-project-description,
+                &:focus .overlay-project-description {
+                    transform: translateY(0);
+                }
+}
+
+.img-project {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-project-description {
+    position: absolute;
+    display: inline-block;
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include font(18px, 400, 28px);
+    letter-spacing: 0.03em;
+    color: var(--btn-text-accent-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform var(--transition-time-and-func);   
+}
+
+.card-description {
+    padding: 20px 24px;
+    border: 1px solid var(--borders-color);
+    border-top: 0px;
+}
+
+.projects-list-title {
+    margin-bottom: 4px;
+    text-align: left;
+    @include font(18px,700,36px);
+    letter-spacing: 0.06em;
+    color: var(--header-dark-color);
+}
+
+.projects-list-desription {
+    @include font(16px,400, 30px);
+    letter-spacing: 0.03em;
+    color: var(--text-description-color);
+}

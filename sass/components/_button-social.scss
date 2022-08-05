@@ -1,0 +1,30 @@
+.button-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 0px;
+    border-radius: 50%;
+    color: var(--color-icon-grey);
+    transition: color var(--transition-time-and-func),
+        background-color var(--transition-time-and-func);
+
+    &:hover {
+        background-color: var(--btn-bg-accent-color);
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    &:focus {
+        background-color: var(--btn-bg-accent-color);
+        color: #ffffff;
+        outline: transparent;
+    }
+}
+
+.svg-social {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}

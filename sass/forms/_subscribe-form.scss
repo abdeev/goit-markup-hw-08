@@ -1,0 +1,72 @@
+.subscribe__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+    margin-right: 12px;
+    border-radius: 4px;
+    border-style: inset;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--bg-footer-color);
+    color: rgba(255, 255, 255, 0.6);
+    transition: filter var(--transition-time-and-func);
+
+    &:hover {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        cursor: pointer;
+    }
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+.button-submit {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+    background-color: var(--btn-bg-accent-color);
+    color: #ffffff;
+    transition: box-shadow var(--transition-time-and-func),
+        background-color var(--transition-time-and-func),
+        color var(--transition-time-and-func);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: var(--btn-bg-hover-color);
+        color: var(--bg-body-color);
+        cursor: pointer;
+    }
+}
+
+
+
+.button-submit__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: currentColor;
+}

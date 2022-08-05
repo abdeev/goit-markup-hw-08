@@ -1,0 +1,25 @@
+:root {
+    /* used fonts */
+    --primary-font-family: "Roboto", sans-serif;
+    --secondary-font-logo: "Raleway", sans-serif;
+    /* color palette */
+    --main-header-color: #000000;
+    --bg-body-color: #e5e5e5;
+    --logo-web-color: #2196f3;
+    --logo-studio-dark: #000000;
+    --logo-studio-light: #ffffff;
+    --bg-head-color: #ffffff;
+    --bg-footer-color: #2f303a;
+    --body-color: #ffffff;
+    --header-dark-color: #212121;
+    --borders-color: #ececec;
+    --btn-bg-accent-color: #2196f3;
+    --btn-text-accent-color: #ffffff;
+    --btn-bg-def-color: #f5f4fa;
+    --block-bg-white-color: #f5f4fa;
+    --btn-text-def-color: #212121;
+    --btn-bg-hover-color: #188ce8;
+    --text-description-color: #757575;
+    --color-icon-grey: #afb1b8;
+    --transition-time-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
