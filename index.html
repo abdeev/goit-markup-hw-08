@@ -23,10 +23,9 @@
 
   <body class="body">
     <!-- верхнє меню -->
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="page-header__container">
         <nav class="navigation">
-          <!-- логотип -->
           <a class="logo logo--web" href="./index.html"
             >Web<span class="logo logo--studio">Studio</span></a
           >
@@ -46,7 +45,6 @@
             </ul>
           </div>
         </nav>
-        <!-- контакти mailto phoneto-->
         <ul class="contacts">
             <li class="contacts__item">
               <a class="contacts__mail" href="mailto:info@devstudio.com">
@@ -75,16 +73,16 @@
             </li>
           </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- ========section hero ==================================-->
       <section class="section hero">
         <div class="container">
-          <h1 class="hero__title">
-            Еффективні рішення для вашого бізнесу
-          </h1>
-          <button class="button-order" type="button" data-modal-open>Замовити послугу</button>
+          <h1 class="hero__title">Еффективні рішення для вашого бізнесу</h1>
+          <button class="button-order" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- наші особливості -->
@@ -94,12 +92,8 @@
           <ul class="features__list">
             <li class="features__card">
               <div class="features__icon">
-                <svg class="svg-features" width="70"
-                    height="70">
-                  <use
-                    href="./images/icons/sprite.svg#antenna"
-                   
-                  ></use>
+                <svg class="svg-features" width="70" height="70">
+                  <use href="./images/icons/sprite.svg#antenna"></use>
                 </svg>
               </div>
 
@@ -112,12 +106,8 @@
 
             <li class="features__card">
               <div class="features__icon">
-                <svg class="svg-features" width="70"
-                    height="70">
-                  <use
-                    href="./images/icons/sprite.svg#clock"
-                   
-                  ></use>
+                <svg class="svg-features" width="70" height="70">
+                  <use href="./images/icons/sprite.svg#clock"></use>
                 </svg>
               </div>
               <h3 class="features__title">Пунктуальність</h3>
@@ -129,12 +119,8 @@
 
             <li class="features__card">
               <div class="features__icon">
-                <svg class="svg-features" width="70"
-                    height="70">
-                  <use
-                    href="./images/icons/sprite.svg#diagram"
-                   
-                  ></use>
+                <svg class="svg-features" width="70" height="70">
+                  <use href="./images/icons/sprite.svg#diagram"></use>
                 </svg>
               </div>
               <h3 class="features__title">Планування</h3>
@@ -145,12 +131,8 @@
 
             <li class="features__card">
               <div class="features__icon">
-                <svg class="svg-features" width="70"
-                    height="70">
-                  <use
-                    href="./images/icons/sprite.svg#astronaut"
-                   
-                  ></use>
+                <svg class="svg-features" width="70" height="70">
+                  <use href="./images/icons/sprite.svg#astronaut"></use>
                 </svg>
               </div>
 
@@ -163,6 +145,7 @@
           </ul>
         </div>
       </section>
+      -->
       <!-- чим ми займаємось -->
       <section class="section directions">
         <div class="container">
@@ -373,7 +356,7 @@
           </ul>
         </div>
       </section>
-<!-- =========Постійні клієнти====================== -->
+      <!-- =========Постійні клієнти====================== -->
       <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
@@ -452,14 +435,11 @@
     <footer class="page-footer">
       <div class="page-footer__container">
         <div class="page-footer__box">
-          <!-- логотип футера-->
           <div class="page-footer__logo-wrapper">
             <a class="logo logo--web" href="./index.html"
               >Web<span class="logo logo--footer">Studio</span></a
             >
           </div>
-
-          <!-- зворотня адреса -->
           <address class="address">
             <ul class="address__list">
               <li class="address__item">
@@ -542,87 +522,90 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal is-hidden" data-modal>
         <button class="close-round-button" type="button" data-modal-close>
-          <svg 
-          class="svg-close-cross" width="11" height="11">
-          <use href="./images/icons/sprite.svg#cross">
-          </use>
-      </svg></button>
-      <form class="modal-form">
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+          <svg class="svg-close-cross" width="11" height="11">
+            <use href="./images/icons/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
 
-        <label class="form-label" for="user-name">Ім'я</label>
-        <div class="input-wrapper">
-          <input 
-        class="form-input" 
-        type="text" 
-        name="user-name" 
-        required 
-        pattern="^[a-zA-Zа-яА-Я]+$"
-        id="user-name"
-        title="Введіть ім'я"
-        />
-        <svg class="icon-profile" width="12" height="12">
-          <use href="./images/icons/sprite.svg#profile-icon"></use>
-        </svg>
-        </div>
-        <label class="form-label" for="user-tel">Телефон</label>
-        <div class="input-wrapper">
-        <input 
-        class="form-input" 
-        type="user-tel" 
-        name="user-tel" 
-        required
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
-        id="user-tel"
-        title="Введіть телефон у форматі xxx-xxx-xx-xx"
-        />
-        <svg class="icon-tel" >
-          <use href="./images/icons/sprite.svg#phone-tube"></use>
-        </svg>
-        </div>
-        <label class="form-label" for="user-mail">Пошта</label>
-        <div class="input-wrapper">
-          <input 
-        class="form-input" 
-        type="email" 
-        name="user-mail" 
-        required
-        id="user-mail"
-        title="Введіть електронну пошту"
-        />
-        <svg class="icon-mail" >
-          <use href="./images/icons/sprite.svg#envelope-form"></use>
-        </svg>
-        </div>
-        <span class="form-label">Коментар</span>
-        <label class="form-label" for="user-comment"><textarea 
-        class="form-input comment" 
-        type="text" 
-        name="user-comment" 
-        placeholder="Введіть текст"></textarea>
-      </label>
-      <div class="input-wrapper input-wrapper--backdown">
-      <label class="accept-description" for="accept-checker">
-        Погоджуюся з розсилкою та приймаю&nbsp;
-        <a class="terms" href="https://www.random.org/terms/2020-08-01/website">
-          &nbsp;Умови договору&nbsp;
-        </a>
-      <input 
-        class="form-input check-input visually-hidden" 
-        type="checkbox" 
-        name="accept" 
-        id="accept-checker"
-        />
-        <span class="box-check" tabindex="0"></span>
-        <svg class="icon-check" width="11" height="8">
-        <use href="./images/icons/sprite.svg#icon-check"></use>
-      </svg>
-    </label>
-      </div>
-      
-      <button type="submit" class="button-submit">Відправити</button>
-      
-      </form>
+          <label class="form-label" for="user-name">Ім'я</label>
+          <div class="input-wrapper">
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              required
+              pattern="^[a-zA-Zа-яА-Я]+$"
+              id="user-name"
+              title="Введіть ім'я"
+            />
+            <svg class="icon-profile" width="12" height="12">
+              <use href="./images/icons/sprite.svg#profile-icon"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="user-tel">Телефон</label>
+          <div class="input-wrapper">
+            <input
+              class="form-input"
+              type="user-tel"
+              name="user-tel"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              id="user-tel"
+              title="Введіть телефон у форматі xxx-xxx-xx-xx"
+            />
+            <svg class="icon-tel">
+              <use href="./images/icons/sprite.svg#phone-tube"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="user-mail">Пошта</label>
+          <div class="input-wrapper">
+            <input
+              class="form-input"
+              type="email"
+              name="user-mail"
+              required
+              id="user-mail"
+              title="Введіть електронну пошту"
+            />
+            <svg class="icon-mail">
+              <use href="./images/icons/sprite.svg#envelope-form"></use>
+            </svg>
+          </div>
+          <span class="form-label">Коментар</span>
+          <label class="form-label" for="user-comment">
+            <textarea
+              class="form-input comment"
+              type="text"
+              name="user-comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <div class="input-wrapper input-wrapper--backdown">
+            <label class="accept-description" for="accept-checker">
+              Погоджуюся з розсилкою та приймаю&nbsp;
+              <a
+                class="terms"
+                href="https://www.random.org/terms/2020-08-01/website"
+              >
+                &nbsp;Умови договору&nbsp;
+              </a>
+              <input
+                class="form-input check-input visually-hidden"
+                type="checkbox"
+                name="accept"
+                id="accept-checker"
+              />
+              <span class="box-check" tabindex="0"></span>
+              <svg class="icon-check" width="11" height="8">
+                <use href="./images/icons/sprite.svg#icon-check"></use>
+              </svg>
+            </label>
+          </div>
+
+          <button type="submit" class="button-submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

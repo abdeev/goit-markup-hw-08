@@ -1,29 +1,60 @@
 .hero {
     position: relative;
-    max-width: 1600px;
-    min-height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
     margin: 0 auto;
-    text-align: center;
-    background-color: #c4c4c4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/BG-btn-block.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+        text-align: center;
+        background-color: #c4c4c4;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/BG-btn-block.jpg);
+        max-width: 1600px;
+        min-height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    @media screen and (max-width: 1199px)  {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/bg-hero-md.jpg);
+        width: 768px;
+        min-height: 400px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+    @media screen and (max-width: 480px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/bg-hero-sm.jpg);
+            width: 480px;
+            min-height: 400px;
+            padding-top: 118px;
+            padding-bottom: 118px;
+    }
+
+    
 }
 
 .hero__title {
-    width: 600px;
-    margin: 0 auto 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    margin-top: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 30px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--btn-text-accent-color);
+
+    @media screen and (max-width: 1199px) {
+        width:360px;
+        @include font(26px, 900, 42px);
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 600px;
+    @include font(44px, 900, 60px);
+    }
 }
 
 .button-order {
