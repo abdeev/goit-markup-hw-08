@@ -41,7 +41,7 @@
   display: flex;
 }
 
-.page-footer__contacts:hover, .page-footer__contacts:focus, .contacts__phone:hover, .contacts__phone:focus, .contacts__mail:hover, .contacts__mail:focus, .navigation__link:hover, .navigation__link:focus {
+.address__contacts:hover, .address__contacts:focus, .contacts__phone:hover, .contacts__phone:focus, .contacts__mail:hover, .contacts__mail:focus, .navigation__link:hover, .navigation__link:focus {
   color: var(--btn-bg-accent-color);
   cursor: pointer;
 }
@@ -116,7 +116,7 @@ button {
   display: flex;
 }
 
-.section__title {
+.section-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -191,6 +191,39 @@ li > .accent__button {
 .svg-social {
   width: 20px;
   height: 20px;
+  fill: currentColor;
+}
+
+.button-submit {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background-color: var(--btn-bg-accent-color);
+  color: #ffffff;
+  transition: box-shadow var(--transition-time-and-func), background-color var(--transition-time-and-func), color var(--transition-time-and-func);
+}
+.button-submit:hover, .button-submit:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--btn-bg-hover-color);
+  color: var(--bg-body-color);
+  cursor: pointer;
+}
+
+.button-submit__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
   fill: currentColor;
 }
 
@@ -327,6 +360,10 @@ li > .accent__button {
   cursor: pointer;
 }
 
+.features {
+  padding-bottom: 47px;
+}
+
 .features__list {
   display: flex;
 }
@@ -351,7 +388,7 @@ li > .accent__button {
   height: 70px;
 }
 
-.card__title {
+.features__title {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -361,7 +398,7 @@ li > .accent__button {
   margin: 0 0;
 }
 
-.card__description {
+.features__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -369,6 +406,10 @@ li > .accent__button {
   color: var(--text-description-color);
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+.directions {
+  padding-top: 47px;
 }
 
 .directions__list {
@@ -416,12 +457,12 @@ li > .accent__button {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__card__wrapper {
+.team__thumb {
   padding: 30px 32px;
   background-color: #ffffff;
 }
 
-.team__card__title {
+.team__title {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
@@ -431,7 +472,7 @@ li > .accent__button {
   color: var(--header-dark-color);
 }
 
-.team__card__description {
+.team__description {
   margin-bottom: 16px;
   font-size: 16px;
   font-weight: 400;
@@ -441,14 +482,14 @@ li > .accent__button {
   color: var(--text-description-color);
 }
 
-.logos__list {
+.clients__list {
   display: flex;
 }
-.logos__list > li:not(:last-child) {
+.clients__list > li:not(:last-child) {
   margin-right: 30px;
 }
 
-.logo-client {
+.clients__logo {
   display: inline-block;
   padding: 14px 30px;
   border: 1px solid var(--color-icon-grey);
@@ -456,16 +497,16 @@ li > .accent__button {
   color: var(--color-icon-grey);
   transition: color var(--transition-time-and-func), border var(--transition-time-and-func);
 }
-.logo-client:hover {
+.clients__logo:hover {
   color: var(--btn-bg-accent-color);
   border: 1px solid var(--btn-bg-accent-color);
   cursor: pointer;
 }
-.logo-client:focus {
+.clients__logo:focus {
   color: var(--btn-bg-accent-color);
 }
 
-.svg-client {
+.clients__svg {
   fill: currentColor;
 }
 
@@ -486,7 +527,7 @@ li > .accent__button {
   margin-right: 70px;
 }
 
-.logo-wrapper {
+.page-footer__logo-wrapper {
   margin-bottom: 20px;
 }
 
@@ -506,11 +547,11 @@ li > .accent__button {
   margin-bottom: 9px;
 }
 
-.page-footer__map-link {
+.address--map-link {
   color: var(--bg-head-color);
 }
 
-.page-footer__contacts {
+.address__contacts {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-time-and-func);
@@ -520,7 +561,7 @@ li > .accent__button {
   color: #ffffff;
 }
 
-.join-social__block-wrapper {
+.page-footer__join-social {
   margin-right: 70px;
 }
 
@@ -528,7 +569,7 @@ li > .accent__button {
   align-self: flex-start;
 }
 
-.subscribe__title {
+.page-footer__title {
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -538,7 +579,7 @@ li > .accent__button {
   color: #ffffff;
 }
 
-.contact-us__block {
+.page-footer__contact-us {
   display: flex;
   align-self: flex-start;
   margin-top: 12px;
@@ -548,14 +589,14 @@ li > .accent__button {
   background-color: var(--bg-head-color);
 }
 
-.sort-buttons {
+.filter {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
 
-.button-filter {
+.filter__button {
   background-color: var(--btn-bg-def-color);
   color: var(--btn-text-def-color);
   padding: 6px 22px;
@@ -567,7 +608,7 @@ li > .accent__button {
   letter-spacing: 0.06em;
   transition: background-color var(--transition-time-and-func), box-shadow var(--transition-time-and-func);
 }
-.button-filter:hover, .button-filter:focus {
+.filter__button:hover, .filter__button:focus {
   background-color: var(--btn-bg-accent-color);
   color: var(--btn-text-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -575,42 +616,38 @@ li > .accent__button {
   outline: transparent;
 }
 
-.active-btn {
+.filter__button--active {
   background-color: var(--btn-bg-accent-color);
   color: var(--btn-text-accent-color);
 }
 
 .projects {
-  padding-top: 50px;
-}
-
-.projects-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.project-item {
+.projects__item {
   position: relative;
   flex-basis: calc((100% - 60px) / 3);
   background-color: var(--bg-head-color);
   transition: box-shadow var(--transition-time-and-func), translate var(--transition-time-and-func);
 }
-.project-item:hover, .project-item:focus {
+.projects__item:hover, .projects__item:focus {
   outline: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
-.project-item:hover .overlay-project-description, .project-item:focus .overlay-project-description {
+.projects__item:hover .projects__overlay, .projects__item:focus .projects__overlay {
   transform: translateY(0);
 }
 
-.img-project {
+.projects__img {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-project-description {
+.projects__overlay {
   position: absolute;
   display: inline-block;
   padding: 63px 24px;
@@ -628,13 +665,13 @@ li > .accent__button {
   transition: transform var(--transition-time-and-func);
 }
 
-.card-description {
+.projects__thumb {
   padding: 20px 24px;
   border: 1px solid var(--borders-color);
   border-top: 0px;
 }
 
-.projects-list-title {
+.projects__title {
   margin-bottom: 4px;
   text-align: left;
   font-size: 18px;
@@ -644,7 +681,7 @@ li > .accent__button {
   color: var(--header-dark-color);
 }
 
-.projects-list-desription {
+.projects__desription {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.88;
@@ -673,7 +710,6 @@ li > .accent__button {
 .modal {
   position: absolute;
   width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -731,6 +767,10 @@ li > .accent__button {
 
 .input-wrapper {
   position: relative;
+}
+
+.input-wrapper--backdown {
+  margin-bottom: 40px;
 }
 
 .form-input {
@@ -859,10 +899,6 @@ li > .accent__button {
   transition: border var(--transition-time-and-func);
 }
 
-.button__modal {
-  margin-top: 30px;
-}
-
 .subscribe__form {
   display: flex;
   justify-content: center;
@@ -893,36 +929,4 @@ li > .accent__button {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.button-submit {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 200px;
-  height: 50px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  letter-spacing: 0.06em;
-  background-color: var(--btn-bg-accent-color);
-  color: #ffffff;
-  transition: box-shadow var(--transition-time-and-func), background-color var(--transition-time-and-func), color var(--transition-time-and-func);
-}
-.button-submit:hover, .button-submit:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--btn-bg-hover-color);
-  color: var(--bg-body-color);
-  cursor: pointer;
-}
-
-.button-submit__icon {
-  display: block;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */

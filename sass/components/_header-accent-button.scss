@@ -1,0 +1,13 @@
+li>.accent__button {
+    color: var(--btn-bg-accent-color);
+}
+
+.accent__button::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    border: 2px solid var(--btn-bg-accent-color);
+    transform: translateY(29px);
+    border-radius: 2px;
+}

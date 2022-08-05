@@ -1,3 +1,6 @@
+.features{
+    padding-bottom: 47px;
+}
 .features__list {
     display: flex;
 }
@@ -23,7 +26,7 @@
     height: 70px;
 }
 
-.card__title {
+.features__title {
     text-transform: uppercase;
     @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
@@ -31,7 +34,7 @@
     margin: 0 0;
 }
 
-.card__description {
+.features__description {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;

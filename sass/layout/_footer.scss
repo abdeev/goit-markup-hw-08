@@ -13,7 +13,7 @@
     margin-right: 70px;
 }
 
-.logo-wrapper {
+.page-footer__logo-wrapper {
     margin-bottom: 20px;
 }
 
@@ -31,11 +31,11 @@
     margin-bottom: 9px;
 }
 
-.page-footer__map-link{
+.address--map-link{
     color: var(--bg-head-color);
 }
 
-.page-footer__contacts {
+.address__contacts {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--transition-time-and-func);
@@ -51,21 +51,21 @@
     color: #ffffff;
 }
 
-.join-social__block-wrapper{
+.page-footer__join-social{
     margin-right: 70px;
 }
 .subscribe {
     align-self: flex-start;
    
 }
-.subscribe__title {
+.page-footer__title {
     margin-bottom: 20px;
     @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
 }
-.contact-us__block{
+.page-footer__contact-us {
     display: flex;
     align-self: flex-start;
     margin-top: 12px;

@@ -14,8 +14,9 @@
 @import "./base/social-links";
 
 @import "./components/logo";
-@import "./components/accent-button";
+@import "./components/header-accent-button";
 @import "./components/button-social";
+@import "./components/button-submit";
 
 @import "./layout/header";
 
@@ -26,7 +27,7 @@
 @import "./layout/clients";
 @import "./layout/footer";
 @import "./portfolio-page/portfolio-main";
-@import "./portfolio-page/buttons-block";
+@import "./portfolio-page/filter-buttons";
 @import "./portfolio-page/pojects-gallery";
 @import "./forms/modal-hero";
 @import "./forms/subscribe-form";

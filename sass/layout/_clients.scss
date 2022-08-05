@@ -1,4 +1,4 @@
-.logos__list {
+.clients__list {
     display: flex;
 
     &>li:not(:last-child) {
@@ -6,7 +6,7 @@
         }
 }
 
-.logo-client {
+.clients__logo {
     display: inline-block;
     padding: 14px 30px;
     border: 1px solid var(--color-icon-grey);
@@ -28,6 +28,6 @@
 
 
 
-.svg-client {
+.clients__svg {
     fill: currentColor;
 }
