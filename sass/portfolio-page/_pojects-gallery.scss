@@ -6,7 +6,10 @@
 
 .projects__item {
     position: relative;
+    display: flex;
+    flex-direction: column;
     flex-basis: calc((100% - (2 * 30px)) / 3);
+    flex-grow: 1;
     background-color: var(--bg-head-color);
     transition: box-shadow var(--transition-time-and-func),
         translate var(--transition-time-and-func);
@@ -21,11 +24,38 @@
                 &:focus .projects__overlay {
                     transform: translateY(0);
                 }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - (2 * 30px)) / 3);
+        }
+    
+        @media screen and (max-width: 1199px) {
+            flex-basis: calc((100% - (30px)) / 2);
+            flex-wrap: wrap;
+        }
+    
+        @media screen and (max-width: 480px) {
+            flex-basis: calc(100%);
+            min-width: 450px;
+            flex-direction: column;
+        }
 }
+
 
 .projects__img {
     position: relative;
     overflow: hidden;
+    @media screen and (min-width: 1200px) {
+            width: 370px;
+        }
+    
+        @media screen and (min-width: 480px) and (max-width: 1199px) {
+            width: 354px;
+        }
+    
+        @media screen and (max-width: 480px) {
+            width: 450px;
+        }
 }
 
 .projects__overlay {
@@ -45,6 +75,7 @@
 }
 
 .projects__thumb {
+    flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid var(--borders-color);
     border-top: 0px;
@@ -62,4 +93,5 @@
     @include font(16px,400, 30px);
     letter-spacing: 0.03em;
     color: var(--text-description-color);
+    padding-bottom: auto;
 }

@@ -1,5 +1,16 @@
 .directions{
-    padding-top: 47px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 47px;
+        }
+        @media screen and (max-width: 1199px) {
+            display: none;
+    
+        }
+    
+        @media screen and (max-width: 480px) {
+            display: none;
+    
+        }
 }
 .directions__list {
     display: flex;

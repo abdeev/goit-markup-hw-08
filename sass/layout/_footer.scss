@@ -1,26 +1,64 @@
 .page-footer {
     padding: 60px 0;
     background-color: var(--bg-footer-color);
+    @media screen and (max-width: 1199px){
+        min-width: 768;
+    }
+    @media screen and (max-width: 480px){
+        min-width: 480px;
+    }
 }
 .page-footer__container {
     display:flex;
-    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    align-items: center;        
+    align-items: center;  
+    @media screen and (min-width: 1200px) {
+            padding-bottom: 47px;
+            max-width: 1200px;
+        }
+    
+        @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+        }
+    @media screen and (max-width: 480px) {
+         flex-direction: column;
+    }
 }
 .page-footer__box {
     margin-right: 70px;
+    @media screen and (max-width: 1199px) {
+            margin-left: 61px;
+            margin-right: 165px;
+        }
+                @media screen and (min-width: 481px) and (max-width: 763px) {
+                    margin: 0 auto;
+                }
+@media screen and (max-width: 480px) {
+    margin: 0 auto;
+}
 }
 
 .page-footer__logo-wrapper {
     margin-bottom: 20px;
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+    @media screen and (max-width: 480px) {
+            text-align: center;
+    }
 }
 
 .logo--footer {
     color: var(--logo-studio-light);
 }
 
+.address{
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+            min-width: 232px;
+        }
+}
 .address__list {
     font-style: normal;
     @include font(14px, 400, 24px);
@@ -52,11 +90,30 @@
 }
 
 .page-footer__join-social{
+    margin-top: 8px;
     margin-right: 70px;
+    align-self: flex-start;
+    @media screen and (max-width: 480px) {
+        padding: 60px 0;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 481px) and (max-width: 763px) {
+            padding: 60px 0;
+            margin: 0 auto;
+        }
 }
 .subscribe {
+    margin-top: 8px;
     align-self: flex-start;
-   
+    @media screen and (max-width: 1199px) {
+        display: block;
+        width: 100%;
+        padding: 60px 0;
+        }
+        @media screen and (max-width: 480px) {
+            padding: 0;
+        }
+
 }
 .page-footer__title {
     margin-bottom: 20px;
@@ -64,6 +121,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+    margin-bottom: 20px;
+    
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+    
+        @media screen and (max-width: 480px) {
+            text-align: center;
+        }
 }
 .page-footer__contact-us {
     display: flex;
