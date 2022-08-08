@@ -33,11 +33,14 @@
           <div class="navigation__menu">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link accent__button" href="./index.html">Студія</a>
+                <a class="navigation__link accent__button" href="./index.html"
+                  >Студія</a
+                >
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="./portfolio.html"
-                  >Портфоліо</a>
+                  >Портфоліо</a
+                >
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="./index.html">Контакти</a>
@@ -46,32 +49,73 @@
           </div>
         </nav>
         <ul class="contacts">
-            <li class="contacts__item">
-              <a class="contacts__mail" href="mailto:info@devstudio.com">
-                <svg class="svg-envelope"  width="16"
-                    height="12">
-                  <use
-                    href="./images/icons/sprite.svg#envelope"
-                   
-                  ></use>
-                </svg>
+          <li class="contacts__item">
+            <a class="contacts__mail" href="mailto:info@devstudio.com">
+              <svg class="svg-envelope" width="16" height="12">
+                <use href="./images/icons/sprite.svg#envelope"></use>
+              </svg>
               info@devstudio.com
             </a>
-            </li>
+          </li>
 
-            <li class="contacts__item">
-              <a class="contacts__phone" href="tel:+380961111111">
-                <svg class="svg-phone" width="10"
-                    height="16">
-                  <use
-                    href="./images/icons/sprite.svg#smartphone"
-                   
-                  ></use>
-                </svg>
+          <li class="contacts__item">
+            <a class="contacts__phone" href="tel:+380961111111">
+              <svg class="svg-phone" width="10" height="16">
+                <use href="./images/icons/sprite.svg#smartphone"></use>
+              </svg>
               +38 096 111 11 11
             </a>
+          </li>
+        </ul>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon" width="24" height="16">
+            <use href="./images/icons/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="19" height="19">
+              <use href="./images/icons/sprite.svg#cross"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__links">
+            <li class="pages-links accent-item">
+              <a href="./index.html">Студія</a>
+            </li>
+            <li class="pages-links">
+              <a href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="pages-links">
+              <a href="#">Контакти</a>
             </li>
           </ul>
+          <ul class="mobile-menu__contacts">
+            <li>
+              <a
+                class="mobile-menu__contacts--phone accent-item"
+                href="tel:+380961111111"
+              >
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li>
+              <a
+                class="mobile-menu__contacts--mail"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__social accent-item">
+            <li class="mobile-social__link">Instagram</li>
+            <li class="mobile-social__link">Twitter</li>
+            <li class="mobile-social__link">Facebook</li>
+            <li class="mobile-social__link">LinkedIn</li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -154,7 +198,6 @@
               <img
                 src="./images/our_work/desktop.jpg"
                 alt="Розробка десктопних додатків"
-                
               />
               <div class="directions__description">
                 <p>Десктопні додатки</p>
@@ -164,18 +207,13 @@
               <img
                 src="./images/our_work/ipad.jpg"
                 alt="Розробка мобільних додатків"
-                
               />
               <div class="directions__description">
                 <p>Мобільні додатки</p>
               </div>
             </li>
             <li class="directions__item">
-              <img
-                src="./images/our_work/phone.jpg"
-                alt="Розробка дизайну"
-                
-              />
+              <img src="./images/our_work/phone.jpg" alt="Розробка дизайну" />
               <div class="directions__description">
                 <p>Дизайнерські рішення</p>
               </div>
@@ -190,40 +228,58 @@
           <ul class="team__list">
             <li class="team__card">
               <picture>
-        <source
-          srcset="./images/team/igordemianenko-lg.webp 1x, ./images/team/igordemianenko-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/igordemianenko-lg.jpg 1x, ./images/team/igordemianenko-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                <source
+                  srcset="
+                    ./images/team/igordemianenko-lg.webp    1x,
+                    ./images/team/igordemianenko-lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/igordemianenko-lg.jpg    1x,
+                    ./images/team/igordemianenko-lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
-        <source
-          srcset="./images/team/igordemianenko-md.webp 1x, ./images/team/igordemianenko-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/igordemianenko-md.jpg 1x, ./images/team/igordemianenko-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                <source
+                  srcset="
+                    ./images/team/igordemianenko-md.webp    1x,
+                    ./images/team/igordemianenko-md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/igordemianenko-md.jpg    1x,
+                    ./images/team/igordemianenko-md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
-        <source
-          srcset="./images/team/igordemianenko-sm.webp 1x, ./images/team/igordemianenko-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/igordemianenko-sm.jpg 1x, ./images/team/igordemianenko-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-              <img
-                src="./images/team/igordemianenko.jpg"
-                alt="Фото Ігор Дем'яненко"
-                width="270"
-              />
+                <source
+                  srcset="
+                    ./images/team/igordemianenko-sm.webp    1x,
+                    ./images/team/igordemianenko-sm@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/igordemianenko-sm.jpg    1x,
+                    ./images/team/igordemianenko-sm@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/team/igordemianenko.jpg"
+                  alt="Фото Ігор Дем'яненко"
+                  width="270"
+                />
               </picture>
               <div class="team__thumb">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -262,40 +318,58 @@
             </li>
             <li class="team__card">
               <picture>
-        <source
-          srcset="./images/team/olgarepina-lg.webp 1x, ./images/team/olgarepina-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/olgarepina-lg.jpg 1x, ./images/team/olgarepina-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                <source
+                  srcset="
+                    ./images/team/olgarepina-lg.webp    1x,
+                    ./images/team/olgarepina-lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/olgarepina-lg.jpg    1x,
+                    ./images/team/olgarepina-lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
-        <source
-          srcset="./images/team/olgarepina-md.webp 1x, ./images/team/olgarepina-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/olgarepina-md.jpg 1x, ./images/team/olgarepina-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                <source
+                  srcset="
+                    ./images/team/olgarepina-md.webp    1x,
+                    ./images/team/olgarepina-md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/olgarepina-md.jpg    1x,
+                    ./images/team/olgarepina-md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
-        <source
-          srcset="./images/team/olgarepina-sm.webp 1x, ./images/team/olgarepina-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/olgarepina-sm.jpg 1x, ./images/team/olgarepina-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-              <img
-                src="./images/team/olgarepina.jpg"
-                alt="Фото Ольга Репіна"
-                width="270"
-              />
+                <source
+                  srcset="
+                    ./images/team/olgarepina-sm.webp    1x,
+                    ./images/team/olgarepina-sm@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/olgarepina-sm.jpg    1x,
+                    ./images/team/olgarepina-sm@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/team/olgarepina.jpg"
+                  alt="Фото Ольга Репіна"
+                  width="270"
+                />
               </picture>
               <div class="team__thumb">
                 <h3 class="team__title">Ольга Репіна</h3>
@@ -334,40 +408,59 @@
             </li>
             <li class="team__card">
               <picture>
-        <source
-          srcset="./images/team/nikolaitarasov-lg.webp 1x, ./images/team/nikolaitarasov-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/nikolaitarasov-lg.jpg 1x, ./images/team/nikolaitarasov-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                <source
+                  srcset="
+                    ./images/team/nikolaitarasov-lg.webp    1x,
+                    ./images/team/nikolaitarasov-lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolaitarasov-lg.jpg    1x,
+                    ./images/team/nikolaitarasov-lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
-        <source
-          srcset="./images/team/nikolaitarasov-md.webp 1x, ./images/team/nikolaitarasov-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/nikolaitarasov-md.jpg 1x, ./images/team/nikolaitarasov-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                <source
+                  srcset="
+                    ./images/team/nikolaitarasov-md.webp    1x,
+                    ./images/team/nikolaitarasov-md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolaitarasov-md.jpg    1x,
+                    ./images/team/nikolaitarasov-md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
-        <source
-          srcset="./images/team/nikolaitarasov-sm.webp 1x, ./images/team/nikolaitarasov-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/nikolaitarasov-sm.jpg 1x, ./images/team/nikolaitarasov-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-              <img
-                src="./images/team/nikolaitarasov.jpg"
-                alt="Фото Микола Тарасов"
-                width="270"
-              />
+                <source
+                  srcset="
+                    ./images/team/nikolaitarasov-sm.webp    1x,
+                    ./images/team/nikolaitarasov-sm@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolaitarasov-sm.jpg    1x,
+                    ./images/team/nikolaitarasov-sm@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/team/nikolaitarasov.jpg"
+                  alt="Фото Микола Тарасов"
+                  width="270"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__description">Marketing</p>
@@ -405,40 +498,59 @@
             </li>
             <li class="team__card">
               <picture>
-        <source
-          srcset="./images/team/mikhailermakov-lg.webp 1x, ./images/team/mikhailermakov-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/mikhailermakov-lg.jpg 1x, ./images/team/mikhailermakov-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                <source
+                  srcset="
+                    ./images/team/mikhailermakov-lg.webp    1x,
+                    ./images/team/mikhailermakov-lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mikhailermakov-lg.jpg    1x,
+                    ./images/team/mikhailermakov-lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
-        <source
-          srcset="./images/team/mikhailermakov-md.webp 1x, ./images/team/mikhailermakov-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/mikhailermakov-md.jpg 1x, ./images/team/mikhailermakov-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                <source
+                  srcset="
+                    ./images/team/mikhailermakov-md.webp    1x,
+                    ./images/team/mikhailermakov-md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mikhailermakov-md.jpg    1x,
+                    ./images/team/mikhailermakov-md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
-        <source
-          srcset="./images/team/mikhailermakov-sm.webp 1x, ./images/team/mikhailermakov-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/mikhailermakov-sm.jpg 1x, ./images/team/mikhailermakov-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-              <img
-                src="./images/team/mikhailermakov.jpg"
-                alt="Фото Михайло Єрмаков"
-                width="270"
-              />
+                <source
+                  srcset="
+                    ./images/team/mikhailermakov-sm.webp    1x,
+                    ./images/team/mikhailermakov-sm@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mikhailermakov-sm.jpg    1x,
+                    ./images/team/mikhailermakov-sm@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/team/mikhailermakov.jpg"
+                  alt="Фото Михайло Єрмаков"
+                  width="270"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__description">UI Designer</p>
@@ -484,68 +596,45 @@
           <ul class="clients__list">
             <li>
               <a class="clients__logo" href="company1.com" tabindex="0">
-              <svg class="clients__svg" width="106"
-                  height="60">
-                <use
-                  href="./images/icons/sprite.svg#logo1"
-                ></use>
-              </svg>
+                <svg class="clients__svg" width="106" height="60">
+                  <use href="./images/icons/sprite.svg#logo1"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a class="clients__logo" href="company2.com" tabindex="0">
-                <svg class="clients__svg" width="106"
-                  height="60">
-                <use
-                  href="./images/icons/sprite.svg#logo2"
-                ></use>
-              </svg>
+                <svg class="clients__svg" width="106" height="60">
+                  <use href="./images/icons/sprite.svg#logo2"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a class="clients__logo" href="company3.com" tabindex="0">
-                <svg class="clients__svg" width="106"
-                  height="60">
-                <use
-                  href="./images/icons/sprite.svg#logo3"
-                ></use>
-              </svg>
+                <svg class="clients__svg" width="106" height="60">
+                  <use href="./images/icons/sprite.svg#logo3"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a class="clients__logo" href="company4.com" tabindex="0">
-                <svg class="clients__svg" width="106"
-                  height="60">
-                <use
-                  href="./images/icons/sprite.svg#logo4"
-                ></use>
-              </svg>
+                <svg class="clients__svg" width="106" height="60">
+                  <use href="./images/icons/sprite.svg#logo4"></use>
+                </svg>
               </a>
-              
             </li>
             <li>
               <a class="clients__logo" href="company5.com" tabindex="0">
-                <svg class="clients__svg" width="106"
-                  height="60">
-                <use
-                  href="./images/icons/sprite.svg#logo5"
-                ></use>
-              </svg>
+                <svg class="clients__svg" width="106" height="60">
+                  <use href="./images/icons/sprite.svg#logo5"></use>
+                </svg>
               </a>
-              
             </li>
             <li>
               <a class="clients__logo" href="company6.com" tabindex="0">
-                <svg class="clients__svg" width="106"
-                  height="60">
-                <use
-                  href="./images/icons/sprite.svg#logo6"
-                  
-                ></use>
+                <svg class="clients__svg" width="106" height="60">
+                  <use href="./images/icons/sprite.svg#logo6"></use>
                 </svg>
               </a>
-              
-              </svg>
             </li>
           </ul>
         </div>
@@ -583,61 +672,61 @@
             </ul>
           </address>
         </div>
-          <div class="page-footer__join-social">
-            <h2 class="page-footer__title">приєднуйтесь</h2>
-            <ul class="social-links">
-              <li>
-                <a class="button-social button-footer" tabindex="0">
-                  <svg class="svg-social" width="20" height="20">
-                    <use href="./images/icons/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="button-social button-footer" tabindex="0">
-                  <svg class="svg-social" width="20" height="20">
-                    <use href="./images/icons/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="button-social button-footer" tabindex="0">
-                  <svg class="svg-social" width="20" height="20">
-                    <use href="./images/icons/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="button-social button-footer" tabindex="0">
-                  <svg class="svg-social" width="20" height="20">
-                    <use href="./images/icons/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="subscribe">
-            <p class="page-footer__title">Підпишіться на розсилку</p>
-            <form class="subscribe__form">
-              <label class="visually-hidden" for="email"
-                >Підпишіться на розсилку</label
-              >
-              <input
-                class="subscribe__input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-                required
-              />
-              <button class="button-submit button-plane" type="submit">
-                Підписатися
-                <svg class="button-submit__icon" width="24" height="24">
-                  <use href="./images/icons/sprite.svg#icon-submit"></use>
+        <div class="page-footer__join-social">
+          <h2 class="page-footer__title">приєднуйтесь</h2>
+          <ul class="social-links">
+            <li>
+              <a class="button-social button-footer" tabindex="0">
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#instagram"></use>
                 </svg>
-              </button>
-            </form>
-          </div>
+              </a>
+            </li>
+            <li>
+              <a class="button-social button-footer" tabindex="0">
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="button-social button-footer" tabindex="0">
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="button-social button-footer" tabindex="0">
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <p class="page-footer__title">Підпишіться на розсилку</p>
+          <form class="subscribe__form">
+            <label class="visually-hidden" for="email"
+              >Підпишіться на розсилку</label
+            >
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="button-submit button-plane" type="submit">
+              Підписатися
+              <svg class="button-submit__icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-submit"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -669,7 +758,7 @@
           <div class="input-wrapper">
             <input
               class="form-input"
-              type="user-tel"
+              type="tel"
               name="user-tel"
               required
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
@@ -695,10 +784,9 @@
             </svg>
           </div>
           <span class="form-label">Коментар</span>
-          <label class="form-label" for="user-comment">
+          <label class="form-label">
             <textarea
               class="form-input comment"
-              type="text"
               name="user-comment"
               placeholder="Введіть текст"
             ></textarea>
@@ -730,5 +818,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
