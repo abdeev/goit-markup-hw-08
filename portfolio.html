@@ -52,34 +52,24 @@
         </nav>
         <!-- контакти mailto phoneto-->
         <ul class="contacts">
-            <li class="contacts__item">
-              <a class="contacts__mail" href="mailto:info@devstudio.com">
-                <svg class="svg-envelope"  width="16"
-                    height="12">
-                  <use
-                    href="./images/icons/sprite.svg#envelope"
-                   
-                  ></use>
-                </svg>
+          <li class="contacts__item">
+            <a class="contacts__mail" href="mailto:info@devstudio.com">
+              <svg class="svg-envelope" width="16" height="12">
+                <use href="./images/icons/sprite.svg#envelope"></use>
+              </svg>
               info@devstudio.com
             </a>
-            </li>
+          </li>
 
-            <li class="contacts__item">
-              <a class="contacts__phone" href="tel:+380961111111">
-                <svg class="svg-phone" width="10"
-                    height="16">
-                  <use
-                    href="./images/icons/sprite.svg#smartphone"
-                   
-                  ></use>
-                </svg>
+          <li class="contacts__item">
+            <a class="contacts__phone" href="tel:+380961111111">
+              <svg class="svg-phone" width="10" height="16">
+                <use href="./images/icons/sprite.svg#smartphone"></use>
+              </svg>
               +38 096 111 11 11
             </a>
-            </li>
+          </li>
         </ul>
-      </div>
-    </header>
       </div>
     </header>
     <main>
@@ -90,7 +80,10 @@
 
           <ul class="filter">
             <li>
-              <button class="filter__button filter__button--active" type="button">
+              <button
+                class="filter__button filter__button--active"
+                type="button"
+              >
                 Усі
               </button>
             </li>
@@ -100,7 +93,9 @@
             <li>
               <button class="filter__button" type="button">Додатки</button>
             </li>
-            <li><button class="filter__button" type="button">Дизайн</button></li>
+            <li>
+              <button class="filter__button" type="button">Дизайн</button>
+            </li>
             <li>
               <button class="filter__button" type="button">Маркетинг</button>
             </li>
@@ -110,40 +105,58 @@
             <li class="projects__item" tabindex="0">
               <div class="projects__img">
                 <picture>
-        <source
-          srcset="./images/projects-pic/technokryak-lg.webp 1x, ./images/projects-pic/technokryak-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/technokryak-lg.jpg 1x, ./images/projects-pic/technokryak-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/technokryak-lg.webp    1x,
+                      ./images/projects-pic/technokryak-lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/technokryak-lg.jpg    1x,
+                      ./images/projects-pic/technokryak-lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/technokryak-md.webp 1x, ./images/projects-pic/technokryak-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/technokryak-md.jpg 1x, ./images/projects-pic/technokryak-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/technokryak-md.webp    1x,
+                      ./images/projects-pic/technokryak-md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/technokryak-md.jpg    1x,
+                      ./images/projects-pic/technokryak-md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/technokryak-sm.webp 1x, ./images/projects-pic/technokryak-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/technokryak-sm.jpg 1x, ./images/projects-pic/technokryak-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-        <img
-                  src="./images/projects-pic/technokryak.jpg"
-                  alt="ноутбук з відкритою сторінкою сайту"
-                />
-      </picture>
+                  <source
+                    srcset="
+                      ./images/projects-pic/technokryak-sm.webp    1x,
+                      ./images/projects-pic/technokryak-sm@2x.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/technokryak-sm.jpg    1x,
+                      ./images/projects-pic/technokryak-sm@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/projects-pic/technokryak.jpg"
+                    alt="ноутбук з відкритою сторінкою сайту"
+                  />
+                </picture>
                 <p class="projects__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -158,40 +171,57 @@
             <li class="projects__item" tabindex="0">
               <div class="projects__img">
                 <picture>
-        <source
-          srcset="./images/projects-pic/poster-neworlean-lg.webp 1x, ./images/projects-pic/poster-neworlean-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/poster-neworlean-lg.jpg 1x, ./images/projects-pic/poster-neworlean-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/poster-neworlean-lg.webp    1x,
+                      ./images/projects-pic/poster-neworlean-lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/poster-neworlean-lg.jpg    1x,
+                      ./images/projects-pic/poster-neworlean-lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/poster-neworlean-md.webp 1x, ./images/projects-pic/poster-neworlean-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/poster-neworlean-md.jpg 1x, ./images/projects-pic/poster-neworlean-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/poster-neworlean-md.webp    1x,
+                      ./images/projects-pic/poster-neworlean-md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/poster-neworlean-md.jpg    1x,
+                      ./images/projects-pic/poster-neworlean-md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/poster-neworlean-sm.webp 1x, ./images/projects-pic/poster-neworlean-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/poster-neworlean-sm.jpg 1x, ./images/projects-pic/poster-neworlean-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-                <img
-                  src="./images/projects-pic/poster-neworlean.jpg"
-                  alt="постер з гравцями у баскетбол"
-                  
-                />
+                  <source
+                    srcset="
+                      ./images/projects-pic/poster-neworlean-sm.webp    1x,
+                      ./images/projects-pic/poster-neworlean-sm@2x.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/poster-neworlean-sm.jpg    1x,
+                      ./images/projects-pic/poster-neworlean-sm@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/projects-pic/poster-neworlean.jpg"
+                    alt="постер з гравцями у баскетбол"
+                  />
                 </picture>
                 <p class="projects__overlay">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -208,41 +238,58 @@
             <li class="projects__item" tabindex="0">
               <div class="projects__img">
                 <picture>
-        <source
-          srcset="./images/projects-pic/seafood-lg.webp 1x, ./images/projects-pic/seafood-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/seafood-lg.jpg 1x, ./images/projects-pic/seafood-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/seafood-lg.webp    1x,
+                      ./images/projects-pic/seafood-lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/seafood-lg.jpg    1x,
+                      ./images/projects-pic/seafood-lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/seafood-md.webp 1x, ./images/projects-pic/seafood-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/seafood-md.jpg 1x, ./images/projects-pic/seafood-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/seafood-md.webp    1x,
+                      ./images/projects-pic/seafood-md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/seafood-md.jpg    1x,
+                      ./images/projects-pic/seafood-md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/seafood-sm.webp 1x, ./images/projects-pic/seafood-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/seafood-sm.jpg 1x, ./images/projects-pic/seafood-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-                <img
-                  src="./images/projects-pic/seafood.jpg"
-                  alt="логотип ресторану"
-                  
-                />
-        </picture>
+                  <source
+                    srcset="
+                      ./images/projects-pic/seafood-sm.webp    1x,
+                      ./images/projects-pic/seafood-sm@2x.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/seafood-sm.jpg    1x,
+                      ./images/projects-pic/seafood-sm@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/projects-pic/seafood.jpg"
+                    alt="логотип ресторану"
+                  />
+                </picture>
                 <p class="projects__overlay">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quaerat impedit minus assumenda eum itaque dignissimos?
@@ -257,41 +304,55 @@
             <li class="projects__item" tabindex="0">
               <div class="projects__img">
                 <picture>
-        <source
-          srcset="./images/projects-pic/prime-lg.webp 1x, ./images/projects-pic/prime-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/prime-lg.jpg 1x, ./images/projects-pic/prime-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/prime-lg.webp    1x,
+                      ./images/projects-pic/prime-lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/prime-lg.jpg    1x,
+                      ./images/projects-pic/prime-lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/prime-md.webp 1x, ./images/projects-pic/prime-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/prime-md.jpg 1x, ./images/projects-pic/prime-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/prime-md.webp    1x,
+                      ./images/projects-pic/prime-md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/prime-md.jpg    1x,
+                      ./images/projects-pic/prime-md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/prime-sm.webp 1x, ./images/projects-pic/prime-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/prime-sm.jpg 1x, ./images/projects-pic/prime-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-                <img
-                  src="./images/projects-pic/prime.jpg"
-                  alt="навушники"
-                  
-                />
-        </picture>
+                  <source
+                    srcset="
+                      ./images/projects-pic/prime-sm.webp    1x,
+                      ./images/projects-pic/prime-sm@2x.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/prime-sm.jpg    1x,
+                      ./images/projects-pic/prime-sm@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img src="./images/projects-pic/prime.jpg" alt="навушники" />
+                </picture>
                 <p class="projects__overlay">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quaerat impedit minus assumenda eum itaque dignissimos?
@@ -305,41 +366,58 @@
             <li class="projects__item" tabindex="0">
               <div class="projects__img">
                 <picture>
-        <source
-          srcset="./images/projects-pic/boxes-lg.webp 1x, ./images/projects-pic/boxes-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/boxes-lg.jpg 1x, ./images/projects-pic/boxes-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/boxes-lg.webp    1x,
+                      ./images/projects-pic/boxes-lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/boxes-lg.jpg    1x,
+                      ./images/projects-pic/boxes-lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/boxes-md.webp 1x, ./images/projects-pic/boxes-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/boxes-md.jpg 1x, ./images/projects-pic/boxes-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/boxes-md.webp    1x,
+                      ./images/projects-pic/boxes-md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/boxes-md.jpg    1x,
+                      ./images/projects-pic/boxes-md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/boxes-sm.webp 1x, ./images/projects-pic/boxes-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/boxes-sm.jpg 1x, ./images/projects-pic/boxes-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-                <img
-                  src="./images/projects-pic/boxes.jpg"
-                  alt="дві різні поштові коробки"
-                  
-                />
-        </picture>
+                  <source
+                    srcset="
+                      ./images/projects-pic/boxes-sm.webp    1x,
+                      ./images/projects-pic/boxes-sm@2x.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/boxes-sm.jpg    1x,
+                      ./images/projects-pic/boxes-sm@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/projects-pic/boxes.jpg"
+                    alt="дві різні поштові коробки"
+                  />
+                </picture>
                 <p class="projects__overlay">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quaerat impedit minus assumenda eum itaque dignissimos?
@@ -353,41 +431,58 @@
             <li class="projects__item" tabindex="0">
               <div class="projects__img">
                 <picture>
-        <source
-          srcset="./images/projects-pic/inspiration-lg.webp 1x, ./images/projects-pic/inspiration-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/inspiration-lg.jpg 1x, ./images/projects-pic/inspiration-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/inspiration-lg.webp    1x,
+                      ./images/projects-pic/inspiration-lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/inspiration-lg.jpg    1x,
+                      ./images/projects-pic/inspiration-lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/inspiration-md.webp 1x, ./images/projects-pic/inspiration-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/inspiration-md.jpg 1x, ./images/projects-pic/inspiration-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/inspiration-md.webp    1x,
+                      ./images/projects-pic/inspiration-md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/inspiration-md.jpg    1x,
+                      ./images/projects-pic/inspiration-md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/inspiration-sm.webp 1x, ./images/projects-pic/inspiration-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/inspiration-sm.jpg 1x, ./images/projects-pic/inspiration-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-                <img
-                  src="./images/projects-pic/inspiration.jpg"
-                  alt="монітор з відкритою сторінкою сайту"
-                  
-                />
-        </picture>
+                  <source
+                    srcset="
+                      ./images/projects-pic/inspiration-sm.webp    1x,
+                      ./images/projects-pic/inspiration-sm@2x.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/inspiration-sm.jpg    1x,
+                      ./images/projects-pic/inspiration-sm@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/projects-pic/inspiration.jpg"
+                    alt="монітор з відкритою сторінкою сайту"
+                  />
+                </picture>
                 <p class="projects__overlay">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quaerat impedit minus assumenda eum itaque dignissimos?
@@ -402,41 +497,58 @@
             <li class="projects__item" tabindex="0">
               <div class="projects__img">
                 <picture>
-        <source
-          srcset="./images/projects-pic/limited-edition-lg.webp 1x, ./images/projects-pic/limited-edition-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/limited-edition-lg.jpg 1x, ./images/projects-pic/limited-edition-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/limited-edition-lg.webp    1x,
+                      ./images/projects-pic/limited-edition-lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/limited-edition-lg.jpg    1x,
+                      ./images/projects-pic/limited-edition-lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/limited-edition-md.webp 1x, ./images/projects-pic/limited-edition-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/limited-edition-md.jpg 1x, ./images/projects-pic/limited-edition-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/limited-edition-md.webp    1x,
+                      ./images/projects-pic/limited-edition-md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/limited-edition-md.jpg    1x,
+                      ./images/projects-pic/limited-edition-md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/limited-edition-sm.webp 1x, ./images/projects-pic/limited-edition-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/limited-edition-sm.jpg 1x, ./images/projects-pic/limited-edition-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-                <img
-                  src="./images/projects-pic/limited-edition.jpg"
-                  alt="журнал"
-                  
-                />
-        </picture>
+                  <source
+                    srcset="
+                      ./images/projects-pic/limited-edition-sm.webp    1x,
+                      ./images/projects-pic/limited-edition-sm@2x.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/limited-edition-sm.jpg    1x,
+                      ./images/projects-pic/limited-edition-sm@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/projects-pic/limited-edition.jpg"
+                    alt="журнал"
+                  />
+                </picture>
                 <p class="projects__overlay">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quaerat impedit minus assumenda eum itaque dignissimos?
@@ -451,40 +563,54 @@
             <li class="projects__item" tabindex="0">
               <div class="projects__img">
                 <picture>
-        <source
-          srcset="./images/projects-pic/LAB-lg.webp 1x, ./images/projects-pic/LAB-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/LAB-lg.jpg 1x, ./images/projects-pic/LAB-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/LAB-lg.webp    1x,
+                      ./images/projects-pic/LAB-lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/LAB-lg.jpg    1x,
+                      ./images/projects-pic/LAB-lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/LAB-md.webp 1x, ./images/projects-pic/LAB-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/LAB-md.jpg 1x, ./images/projects-pic/LAB-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/LAB-md.webp    1x,
+                      ./images/projects-pic/LAB-md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/LAB-md.jpg    1x,
+                      ./images/projects-pic/LAB-md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/LAB-sm.webp 1x, ./images/projects-pic/LAB-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/LAB-sm.jpg 1x, ./images/projects-pic/LAB-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-                <img
-                  src="./images/projects-pic/LAB.jpg"
-                  alt="Бірка"
-                  
-                />
+                  <source
+                    srcset="
+                      ./images/projects-pic/LAB-sm.webp    1x,
+                      ./images/projects-pic/LAB-sm@2x.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/LAB-sm.jpg    1x,
+                      ./images/projects-pic/LAB-sm@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img src="./images/projects-pic/LAB.jpg" alt="Бірка" />
                 </picture>
                 <p class="projects__overlay">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -500,40 +626,58 @@
             <li class="projects__item" tabindex="0">
               <div class="projects__img">
                 <picture>
-        <source
-          srcset="./images/projects-pic/growing-business-lg.webp 1x, ./images/projects-pic/growing-business-lg@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/growing-business-lg.jpg 1x, ./images/projects-pic/growing-business-lg@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/growing-business-lg.webp    1x,
+                      ./images/projects-pic/growing-business-lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/growing-business-lg.jpg    1x,
+                      ./images/projects-pic/growing-business-lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/growing-business-md.webp 1x, ./images/projects-pic/growing-business-md@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/growing-business-md.jpg 1x, ./images/projects-pic/growing-business-md@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
+                  <source
+                    srcset="
+                      ./images/projects-pic/growing-business-md.webp    1x,
+                      ./images/projects-pic/growing-business-md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/growing-business-md.jpg    1x,
+                      ./images/projects-pic/growing-business-md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
 
-        <source
-          srcset="./images/projects-pic/growing-business-sm.webp 1x, ./images/projects-pic/growing-business-sm@2x.webp 2x"
-          media="(max-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/projects-pic/growing-business-sm.jpg 1x, ./images/projects-pic/growing-business-sm@2x.jpg 2x"
-          media="(max-width: 768px)"
-        />
-                <img
-                  src="./images/projects-pic/growing-business.jpg"
-                  alt="робота за ноутбуком"
-                  
-                />
+                  <source
+                    srcset="
+                      ./images/projects-pic/growing-business-sm.webp    1x,
+                      ./images/projects-pic/growing-business-sm@2x.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-pic/growing-business-sm.jpg    1x,
+                      ./images/projects-pic/growing-business-sm@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/projects-pic/growing-business.jpg"
+                    alt="робота за ноутбуком"
+                  />
+                </picture>
                 <p class="projects__overlay">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quaerat impedit minus assumenda eum itaque dignissimos?
@@ -581,61 +725,61 @@
             </ul>
           </address>
         </div>
-          <div class="page-footer__join-social">
-            <h2 class="page-footer__title">приєднуйтесь</h2>
-            <ul class="social-links">
-              <li>
-                <a class="button-social button-footer" tabindex="0">
-                  <svg class="svg-social" width="20" height="20">
-                    <use href="./images/icons/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="button-social button-footer" tabindex="0">
-                  <svg class="svg-social" width="20" height="20">
-                    <use href="./images/icons/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="button-social button-footer" tabindex="0">
-                  <svg class="svg-social" width="20" height="20">
-                    <use href="./images/icons/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="button-social button-footer" tabindex="0">
-                  <svg class="svg-social" width="20" height="20">
-                    <use href="./images/icons/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="subscribe">
-            <p class="page-footer__title">Підпишіться на розсилку</p>
-            <form class="subscribe__form">
-              <label class="visually-hidden" for="email"
-                >Підпишіться на розсилку</label
-              >
-              <input
-                class="subscribe__input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-                required
-              />
-              <button class="button-submit button-plane" type="submit">
-                Підписатися
-                <svg class="button-submit__icon" width="24" height="24">
-                  <use href="./images/icons/sprite.svg#icon-submit"></use>
+        <div class="page-footer__join-social">
+          <h2 class="page-footer__title">приєднуйтесь</h2>
+          <ul class="social-links">
+            <li>
+              <a class="button-social button-footer" tabindex="0">
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#instagram"></use>
                 </svg>
-              </button>
-            </form>
-          </div>
+              </a>
+            </li>
+            <li>
+              <a class="button-social button-footer" tabindex="0">
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="button-social button-footer" tabindex="0">
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="button-social button-footer" tabindex="0">
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <p class="page-footer__title">Підпишіться на розсилку</p>
+          <form class="subscribe__form">
+            <label class="visually-hidden" for="email"
+              >Підпишіться на розсилку</label
+            >
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="button-submit button-plane" type="submit">
+              Підписатися
+              <svg class="button-submit__icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-submit"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
