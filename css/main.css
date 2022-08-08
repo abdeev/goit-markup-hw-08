@@ -430,11 +430,16 @@ li > .accent__button {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero-lg.jpg);
     max-width: 1600px;
     min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/bg-hero-lg@2x.jpg);
   }
 }
 @media screen and (max-width: 1199px) {
@@ -447,6 +452,11 @@ li > .accent__button {
     padding-bottom: 118px;
   }
 }
+@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/bg-hero-md@2x.jpg);
+  }
+}
 @media screen and (max-width: 480px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero-sm.jpg);
@@ -454,6 +464,11 @@ li > .accent__button {
     min-height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
+  }
+}
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/bg-hero-sm@2x.jpg);
   }
 }
 
@@ -1041,10 +1056,10 @@ li > .accent__button {
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .projects__item {
     flex-basis: 100%;
-    min-width: 450px;
+    max-width: 450px;
     flex-direction: column;
   }
 }
@@ -1053,19 +1068,19 @@ li > .accent__button {
   position: relative;
   overflow: hidden;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
   .projects__img {
-    width: 370px;
+    width: 450px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects__img {
     width: 354px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .projects__img {
-    width: 450px;
+    width: 370px;
   }
 }
 
@@ -1110,7 +1125,6 @@ li > .accent__button {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-description-color);
-  padding-bottom: auto;
 }
 
 .backdrop.is-hidden {
