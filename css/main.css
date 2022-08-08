@@ -952,7 +952,7 @@ li > .accent__button {
 }
 @media screen and (max-width: 1199px) {
   .page-footer {
-    min-width: 768;
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
