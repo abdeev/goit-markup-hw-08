@@ -11,7 +11,7 @@
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
+        transition: opacity var(--transition-time-and-func), visibility var(--transition-time-and-func);
     }
 
     .mobile-menu.is-open {
@@ -42,6 +42,7 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    transition: all var(--transition-time-and-func);
     &:hover,
     &:focus{
         color: var(--btn-bg-accent-color);
@@ -54,14 +55,22 @@
 .mobile-menu__links {
     padding-top: 48px;
     margin-bottom: 302px;
+    color: var(--btn-text-def-color);
+    
 }
 
 .pages-links {
     @include font(40px, 500, 47px);
-
+    
     &:not(:last-child) {
         margin-bottom: 32px;
     }
+        transition: all var(--transition-time-and-func);
+    
+        &:hover,
+        &:focus {
+            color: var(--btn-bg-hover-color);
+        }   
 }
 .mobile-menu__contacts{
     display: flex;
@@ -73,10 +82,22 @@
     display: inline-block;
     @include font(34px, 500, 40px);
     margin-bottom: 32px;
+    transition: all var(--transition-time-and-func);
+    
+        &:hover,
+        &:focus {
+            color: var(--btn-bg-accent-color);
+        }
 }
 .mobile-menu__contacts--mail{
     @include font(24px, 500, 28px);
     color: var(--text-description-color);
+    transition: all var(--transition-time-and-func);
+    
+        &:hover,
+        &:focus {
+            color: var(--btn-bg-accent-color);
+        }
         
 }
 .mobile-menu__social{
@@ -85,9 +106,15 @@
 }
 .mobile-social__link{
     @include font(18px, 500, 22px);
+    cursor: pointer;
+    transition: all var(--transition-time-and-func);
 &:not(:last-child){
 border-right: 1px solid rgba(33, 33, 33, 0.2);
 padding-right: 10px;
 margin-right: 10px;
+}
+&:hover,
+&:focus{
+    color: var(--btn-bg-hover-color);
 }
 }
