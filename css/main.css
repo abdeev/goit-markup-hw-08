@@ -1295,7 +1295,6 @@ li > .accent__button {
 
 .modal {
   position: absolute;
-  width: 528px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1306,17 +1305,17 @@ li > .accent__button {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: auto;
+    max-width: 528px;
   }
 }
 @media screen and (max-width: 1199px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (max-width: 480px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
   }
 }
 

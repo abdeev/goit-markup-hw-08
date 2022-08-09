@@ -19,7 +19,6 @@
 
 .modal {
     position: absolute;
-    width: 528px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -29,15 +28,15 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--body-color);
     @media screen and (min-width: 1200px) {
-            width: auto;
+            max-width: 528px;
         }
     
         @media screen and (max-width: 1199px) {
-            width: 450px;
+            max-width: 450px;
         }
     
         @media screen and (max-width: 480px) {
-            width: 450px;
+            max-width: 450px;
         }
 }
 .modal-title {
