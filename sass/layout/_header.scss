@@ -11,21 +11,21 @@
 }
 .page-header__container {
     display: flex;
+    padding: 15px;
     margin: 0 auto;
     min-width: 480px;
     align-items: center;
-    @media screen and (min-width: 1200px) {
-            max-width: 1200px;
-        }
-    @media screen and (min-width: 767px) {
-            padding: 15px;
-        }
-        @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) {
             flex-direction: row;
             justify-content: space-between;
             padding: 15px;
         }
+    
+        @media screen and (min-width: 768px) {
+        padding: 0;
+        }
 }
+
 .navigation {
     display: flex;
     margin-right: auto;
@@ -33,15 +33,13 @@
 }
 
 .navigation__menu {
-    @media screen and (min-width: 1200px){
-    margin-left: 93px;
-    }
-        @media screen and (max-width: 1199px) {
-            margin-left: 88px;
+        @media screen and (min-width: 768px) {
+    margin-left: 88px;
         }
                 @media screen and (max-width: 768px) {
                     display: none;
                 }
+
 }
 
 .navigation__list {
@@ -72,15 +70,22 @@
 
 .contacts {
     display: flex;
-    align-items: center;
+    
     gap: 50px;
-        @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 768px) {
+            display: none;
+        }
+    
+        @media screen and (min-width: 768px) {
             flex-direction: column;
             gap: 10px;
         }
-                @media screen and (min-width: 767px){
-                    display: none;
-                }   
+                 @media screen and (min-width: 1200px) {
+                    flex-direction: row;
+                    gap: 30px;
+                    align-items: center;
+                 }
+
 }
 
 .contacts__item {
@@ -107,12 +112,15 @@
         &:focus {
             @extend %hov-foc-features;
         }
-        @media screen and (max-width: 1199px) {
+        @media screen and (min-width: 768px){
             padding-top: 21px;
             padding-right: 0;
             padding-left: 0;
             padding-bottom: 0;
         }
+                @media screen and (min-width: 1200px) {
+                    padding: 32px 0;
+                }
 }
 
 .svg-phone {
@@ -133,14 +141,17 @@
             @extend %hov-foc-features;
         }
     
-                @media screen and (min-width: 1199px) {
+                @media screen and (min-width: 768px) {
                     padding-top: 0px;
                     padding-right: 0;
                     padding-left: 0;
                     padding-bottom: 21px;
                 }
+                                @media screen and (min-width: 1200px) {
+                                    padding: 32px 0;
+                                }
 }
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
     .menu {
         display: none;
     }

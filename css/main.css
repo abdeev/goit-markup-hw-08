@@ -100,45 +100,44 @@ button {
 }
 
 .container {
-  padding: 0 15px;
-  margin: 0 auto;
-  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 1200px;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .container {
-    min-width: 480px;
+    width: 1200px;
   }
 }
 
 .section {
   background-color: var(--bg-head-color);
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .section {
-    padding: 60px 0;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section {
-    padding: 60px 0;
-    margin: 0 auto;
   }
 }
 
@@ -272,7 +271,7 @@ li > .accent__button {
   fill: currentColor;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .open-mobile-menu-btn,
 .mobile-menu {
     display: none;
@@ -407,25 +406,21 @@ li > .accent__button {
 
 .page-header__container {
   display: flex;
+  padding: 15px;
   margin: 0 auto;
   min-width: 480px;
   align-items: center;
-}
-@media screen and (min-width: 1200px) {
-  .page-header__container {
-    max-width: 1200px;
-  }
-}
-@media screen and (min-width: 767px) {
-  .page-header__container {
-    padding: 15px;
-  }
 }
 @media screen and (min-width: 480px) {
   .page-header__container {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-header__container {
+    padding: 0;
   }
 }
 
@@ -435,12 +430,7 @@ li > .accent__button {
   align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .navigation__menu {
-    margin-left: 93px;
-  }
-}
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .navigation__menu {
     margin-left: 88px;
   }
@@ -478,18 +468,24 @@ li > .accent__button {
 }
 .contacts {
   display: flex;
-  align-items: center;
   gap: 50px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 768px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
   .contacts {
     flex-direction: column;
     gap: 10px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .contacts {
-    display: none;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
   }
 }
 
@@ -515,12 +511,17 @@ li > .accent__button {
   align-items: center;
   transition: color var(--transition-time-and-func);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .contacts__mail {
     padding-top: 21px;
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__mail {
+    padding: 32px 0;
   }
 }
 
@@ -538,7 +539,7 @@ li > .accent__button {
   align-items: center;
   transition: color var(--transition-time-and-func);
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) {
   .contacts__phone {
     padding-top: 0px;
     padding-right: 0;
@@ -546,8 +547,13 @@ li > .accent__button {
     padding-bottom: 21px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__phone {
+    padding: 32px 0;
+  }
+}
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
