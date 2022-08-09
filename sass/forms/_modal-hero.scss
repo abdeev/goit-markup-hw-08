@@ -22,7 +22,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    overflow-x: scroll;
+    max-height: 98%;
+    overflow-x: hidden;
     transform: translate(-50%, -50%);
     visibility: visible;
     border-radius: 4px;
