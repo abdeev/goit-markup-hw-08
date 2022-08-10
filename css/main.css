@@ -123,17 +123,8 @@ button {
 
 .section {
   background-color: var(--bg-head-color);
+  padding: 60px 0;
   margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .section {
-    padding: 60px 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding: 60px 0;
-  }
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -968,40 +959,42 @@ li > .accent__button {
   margin: 0 auto;
   align-items: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 479px) {
   .page-footer__container {
-    padding-bottom: 47px;
-    max-width: 1200px;
+    flex-direction: column;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .page-footer__container {
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .page-footer__container {
-    flex-direction: column;
+    flex-direction: row;
+    padding-bottom: 47px;
+    max-width: 1200px;
   }
 }
 
 .page-footer__box {
   margin-right: 70px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .page-footer__box {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-footer__box {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__box {
+    display: block;
     margin-left: 61px;
     margin-right: 165px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 763px) {
-  .page-footer__box {
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  .page-footer__box {
-    margin: 0 auto;
   }
 }
 
@@ -1056,21 +1049,29 @@ li > .accent__button {
   color: #ffffff;
 }
 
-.page-footer__join-social {
-  margin-top: 8px;
-  margin-right: 70px;
-  align-self: flex-start;
-}
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .page-footer__join-social {
     padding: 60px 0;
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 763px) {
+@media screen and (min-width: 480px) {
   .page-footer__join-social {
     padding: 60px 0;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-footer__join-social {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__join-social {
+    display: block;
+    padding: 0;
+    margin-top: 8px;
+    align-self: flex-start;
   }
 }
 
@@ -1078,20 +1079,22 @@ li > .accent__button {
   margin-top: 8px;
   align-self: flex-start;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
+  .subscribe {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
   .subscribe {
     display: block;
     width: 100%;
     padding: 60px 0;
   }
 }
-@media screen and (max-width: 480px) {
-  .subscribe {
-    padding: 0;
-  }
-}
 
 .page-footer__title {
+  display: inline-block;
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -1124,26 +1127,34 @@ li > .accent__button {
 
 .filter {
   display: flex;
-  justify-content: center;
   gap: 8px;
 }
-@media screen and (min-width: 1200px) {
-  .filter {
-    margin-bottom: 50px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .filter {
-    margin-bottom: 30px;
-    min-width: 590px;
-  }
-}
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .filter {
     margin-bottom: 40px;
     flex-wrap: wrap;
     min-width: 332px;
     justify-content: left;
+  }
+}
+@media screen and (min-width: 480px) {
+  .filter {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    min-width: 332px;
+    justify-content: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+    min-width: 590px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -1574,11 +1585,21 @@ li > .accent__button {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .subscribe__input {
     margin-bottom: 20px;
-    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
     width: 450px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    margin-bottom: 0;
   }
 }
 .subscribe__input:hover {
